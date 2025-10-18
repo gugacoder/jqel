@@ -35,6 +35,7 @@ Você vai **implementar** operações JQEL no backend.
 
 ```json
 {
+  "schema": "vendapp",
   "select": "usuario",
   "where": { "status": { "eq": "ativo" } },
   "options": { "limit": 10, "orderBy": [{ "field": "nome_completo", "direction": "asc" }] },
@@ -56,6 +57,7 @@ Você vai **implementar** operações JQEL no backend.
 
 ```json
 {
+  "schema": "vendapp",
   "mutate": "usuario",
   "action": "insert",
   "values": { "nome_completo": "Carlos Oliveira", "email": "carlos@example.com", "status": "ativo" },
@@ -75,6 +77,7 @@ Você vai **implementar** operações JQEL no backend.
 
 ```json
 {
+  "schema": "vendapp",
   "select": "usuario",
   "where": { "status": { "eq": "ativo" } },
   "options": { "limit": 10 },
